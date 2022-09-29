@@ -249,7 +249,31 @@ footer a:hover {
 }
 
 
-/* inicio heroe */
+/* fin heroe */
+
+/* inicio our services */
+
+main .container .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main .container .underline span {
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+
+
+/* inicio our services */
+
 
 
 
