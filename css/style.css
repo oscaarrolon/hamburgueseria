@@ -114,15 +114,16 @@ header nav .container .menu {
 
 header nav .container .menu li {
     width: 100%;
+    border-bottom: 1px solid #aaa;
+
 }
 
-header nav .container .menu a {
-    width: 80%;
+
+header nav .container .menu li a {
+
     padding: 1.25em;
     text-decoration: none;
     color: #aaa;
-    border-bottom: 1px solid #aaa;
-
 }
 
 header nav .container .menu li:last-child {
@@ -403,14 +404,7 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
         flex-direction: row;
     }
 
-    main section .flex .imagen {
-
-        margin: 0 2.5em;
-    }
-
-
 }
-
 
 
 @media(min-width: 48em) {
@@ -418,6 +412,7 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
         display: inline;
     }
+
 
     footer {
 
@@ -444,13 +439,32 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
         width: auto;
 
     }
+
+    header nav .container .menu {
+        width: auto;
+        text-align: left;
+    }
+
+    header nav .container .menu li a {
+        padding: 0em 1.25em;
+        border-bottom: 0px;
+        width: 100%;
+        border-bottom: 0x solid white;
+
+    }
+
+    header nav .container .menu li {
+        display: inline-flex;
+
+
+
+
+    }
 }
 
-header nav .container .menu a {
-    display: inline-flex;
 
 
-}
+
 
 
 /* medias querys */
