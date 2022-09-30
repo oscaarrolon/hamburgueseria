@@ -223,7 +223,7 @@ footer a:hover {
 }
 
 .boton {
-    margin: var(--margingrid);
+    margin: var(--margingrid) 0;
     display: inline-block;
     background-color: var(--colorprincipal);
     color: white;
@@ -261,6 +261,18 @@ footer a:hover {
 /* fin heroe */
 
 /* inicio our services */
+
+
+main section .container h2 {
+    font-family: var(--fuentetitulos);
+    font-size: 150%;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+main section .container h2 span {
+    color: var(--colorprincipal);
+}
 
 main section .underline {
     position: relative;
@@ -322,10 +334,54 @@ main p {
     transform: rotateY(180);
 }
 
-/* inicio our services */
+/* final our services */
 
 
 
+
+/* inicio about us  */
+
+main #aboutus {
+    margin-bottom: 4.375em;
+
+}
+
+main section .flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main section .flex h3 {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main section .flex h4 {
+    color: var(--colorprincipal);
+    padding: var(--margingrid) 0;
+}
+
+main section .flex .imagen {
+    width: 93%;
+    margin: 2.5em auto;
+}
+
+main section .flex .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main section .flex figure.imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+
+main section .flex .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
 
 /* medias querys */
 
@@ -341,6 +397,15 @@ main p {
 
     main section .grid article:last-child {
         width: 100%;
+    }
+
+    main section .flex {
+        flex-direction: row;
+    }
+
+    main section .flex .imagen {
+
+        margin: 0 2.5em;
     }
 
 
