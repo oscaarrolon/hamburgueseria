@@ -80,7 +80,7 @@ header nav .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-top: 1.5em; */
+    margin-top: 1.5em;
 
 
 }
@@ -115,13 +115,11 @@ header nav .container .menu {
 header nav .container .menu li {
     width: 100%;
     border-bottom: 1px solid #aaa;
-
+    padding: 1.25em;
 }
 
 
 header nav .container .menu li a {
-
-    padding: 1.25em;
     text-decoration: none;
     color: #aaa;
 }
@@ -214,7 +212,7 @@ footer a:hover {
 }
 
 .hero .container h2 {
-    margin: 1em;
+    margin: 1em 0;
     color: var(--colorprincipal);
     font-size: 1.25em;
 }
@@ -244,6 +242,7 @@ footer a:hover {
 }
 
 .hero ul {
+    display: flex;
     width: 9em;
     justify-content: space-between;
 }
@@ -251,13 +250,8 @@ footer a:hover {
 .hero ul a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
-
-
-
-
+    font-size: 2em;
 }
-
 
 /* fin heroe */
 
@@ -443,23 +437,24 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
     header nav .container .menu {
         width: auto;
         text-align: left;
+        display: flex;
+        border-bottom: 0px;
     }
 
+    /* 
     header nav .container .menu li a {
         padding: 0em 1.25em;
         border-bottom: 0px;
         width: 100%;
         border-bottom: 0x solid white;
-
+        display: flex;
+        flex-direction: row;
     }
 
     header nav .container .menu li {
-        display: inline-flex;
 
 
-
-
-    }
+    } */
 }
 
 
