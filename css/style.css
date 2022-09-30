@@ -23,7 +23,7 @@ html {
     --colorsecundario: #21242e;
     --margingrid: 1em;
     --fontsize: 1em;
-    --anchomaximo: 68.75em;
+    --anchomaximo: 88.75em;
 }
 
 img {
@@ -35,13 +35,14 @@ img {
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
-
 }
 
 body {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
 }
+
+
 
 
 /* inicio header */
@@ -147,6 +148,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+
 }
 
 footer a {
@@ -164,15 +166,16 @@ footer a:hover {
 
 /* fin footer */
 
-.flecha {
+.flecha a {
+    display: block;
     color: var(--colorprincipal);
     position: fixed;
-    display: flex;
-    bottom: 4.375;
-    right: 1.25;
-    font-size: 40px;
+    bottom: 1.375em;
+    right: 0.25em;
+    font-size: 300%;
 
 }
+
 
 
 
@@ -187,7 +190,7 @@ footer a:hover {
 
 /* inicio heroe */
 .hero {
-    background-image: url(../header_transversal/images/images/fondo.jpg);
+    background-image: url(../featured-home/images/images/fondo.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center center;
@@ -233,6 +236,7 @@ footer a:hover {
 }
 
 .boton:hover {
+    color: var(--colorprincipal);
     background-color: transparent;
 
 }
@@ -260,7 +264,7 @@ footer a:hover {
 
 main section .container h2 {
     font-family: var(--fuentetitulos);
-    font-size: 150%;
+    font-size: 2em;
     margin-top: 1.5em;
     text-align: center;
 }
@@ -269,13 +273,18 @@ main section .container h2 span {
     color: var(--colorprincipal);
 }
 
+
 main section .underline {
     position: relative;
     width: 6.250em;
     margin: 0 auto;
     color: var(--colorprincipal);
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
+}
+
+main section .underline hr {
+    border-color: var(--colorprincipal);
 }
 
 main section .underline span {
@@ -337,7 +346,7 @@ main p {
 /* inicio about us  */
 
 main #aboutus {
-    margin-bottom: 4.375em;
+    margin-bottom: 3.375em;
 
 }
 
@@ -346,6 +355,8 @@ main section .flex {
     flex-direction: column;
 
 }
+
+
 
 main section .flex h3 {
     font-weight: 700;
@@ -385,10 +396,10 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
         width: 50%;
         border-bottom: 0px solid;
         border-left: 1px solid #aaa;
-        padding-left: 1.25em 0em;
         margin-top: 1.1em;
-
+        padding: 1.25em;
     }
+
 
     main section .grid article:last-child {
         width: 100%;
@@ -398,6 +409,10 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
         flex-direction: row;
     }
 
+    main section .flex .imagen {
+        margin: 0 2.5em;
+
+    }
 }
 
 
@@ -419,8 +434,17 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
     }
 
+    main section .flex {
+        flex-direction: row;
+    }
 
+    main section .flex .imagen {
+        margin: 0 2.5em;
+    }
 
+    main section .flex {
+        margin-top: 2.5em;
+    }
 }
 
 
@@ -441,20 +465,12 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
         border-bottom: 0px;
     }
 
-    /* 
-    header nav .container .menu li a {
-        padding: 0em 1.25em;
-        border-bottom: 0px;
-        width: 100%;
-        border-bottom: 0x solid white;
-        display: flex;
-        flex-direction: row;
+
+    footer {
+        margin-top: 1.5em;
+
     }
 
-    header nav .container .menu li {
-
-
-    } */
 }
 
 
