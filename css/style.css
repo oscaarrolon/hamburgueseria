@@ -439,6 +439,23 @@ main section .container .gridblog a {
 
 /* fin blog */
 
+/* /* inicio menu */
+
+main section .containermenu {
+    background-color: var(--colorsecundario);
+}
+
+main section .containermenu .titulo h2 {
+    color: white;
+
+}
+
+
+
+
+/* fin menu */
+
+
 
 /* medias querys */
 
