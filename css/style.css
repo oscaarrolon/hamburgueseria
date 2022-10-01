@@ -407,12 +407,10 @@ main section .container .cuadro {
     display: block;
     flex-direction: column;
     background-color: rgba(250, 87, 58, .65);
-    width: 15%;
-    height: 11%;
+    width: 4em;
+    height: 4em;
     position: absolute;
 }
-
-
 
 main section .container .cuadro p {
     color: white;
