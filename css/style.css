@@ -7,7 +7,7 @@
 
 /* font-family: 'Handlee', cursive;
 font-family: 'Montserrat', sans-serif; 
-color_principal: #fa57733a; 
+color_principal: #fa573a; 
 color_azul: #21242e;*/
 
 
@@ -388,6 +388,34 @@ main section .flex figure.imagen .marco img {
 main section .flex .imagen:hover :is(.marco, .marco img) {
     transform: rotateZ(0deg);
 }
+
+/* fin about us */
+
+/* inicio blog  */
+
+main section .container .cuadro {
+    display: block;
+    flex-direction: column;
+    background-color: rgba(250, 87, 58, 1);
+    width: 5em;
+    height: 5em;
+
+}
+
+
+main section .container .cuadro p {
+    color: white;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 35px;
+}
+
+main section .container figure {}
+
+/* fin blog */
+
+
+
 
 /* medias querys */
 
