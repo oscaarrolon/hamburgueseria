@@ -393,28 +393,53 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
 /* inicio blog  */
 
+main section .container .gridblog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section .container .gridblog article {
+    width: 50%;
+    padding: var(--margingrid) 1em;
+}
+
 main section .container .cuadro {
     display: block;
     flex-direction: column;
-    background-color: rgba(250, 87, 58, 1);
-    width: 5em;
-    height: 5em;
-
+    background-color: rgba(250, 87, 58, .65);
+    width: 15%;
+    height: 11%;
+    position: absolute;
 }
+
 
 
 main section .container .cuadro p {
     color: white;
     text-align: justify;
-    font-size: 1.5em;
-    line-height: 35px;
+    font-size: 1.3em;
+    text-align: center;
+    line-break: loose;
+
 }
 
-main section .container figure {}
+main section .container .gridblog h3 {
+    font-weight: 700;
+    font-size: 110%;
+    margin-top: 1em;
+}
+
+main section .container .gridblog h4 {
+    color: var(--colorprincipal);
+    padding: var(--margingrid) 0;
+    font-size: 0.8em;
+}
+
+main section .container .gridblog a {
+    padding-top: 1em;
+}
 
 /* fin blog */
-
-
 
 
 /* medias querys */
@@ -441,6 +466,11 @@ main section .container figure {}
         margin: 0 2.5em;
 
     }
+
+    main section .container .gridblog {
+        flex-direction: row;
+    }
+
 }
 
 
@@ -472,6 +502,13 @@ main section .container figure {}
 
     main section .flex {
         margin-top: 2.5em;
+    }
+
+
+    main section .container .gridblog article {
+        width: 33.333%;
+        justify-content: space-between;
+
     }
 }
 
