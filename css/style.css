@@ -40,7 +40,10 @@ img {
 body {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
+    padding-bottom: 4em;
 }
+
+
 
 
 
@@ -437,16 +440,110 @@ main section .container .gridblog a {
     padding-top: 1em;
 }
 
+
+
 /* fin blog */
 
 /* /* inicio menu */
+
+.containermenu {
+    padding: 1.5em;
+}
+
+main section .gridmenu {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+main section .containermenu .gridmenu article {
+    margin-top: 2em;
+}
+
+main section .containermenu .gridmenu article h4 {
+    margin-top: 1em;
+}
+
+main section .containermenu .gridmenu article p {
+    margin-top: 1em;
+
+}
+
+
 
 main section .containermenu {
     background-color: var(--colorsecundario);
 }
 
+main section .containermenu .titulo {
+
+    margin: 0 auto;
+    background-color: var(--colorsecundario);
+}
+
 main section .containermenu .titulo h2 {
     color: white;
+    text-align: center;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+
+}
+
+main section .containermenu .titulo h2 span {
+    color: var(--colorprincipal);
+}
+
+
+main section .containermenu .breakfast {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    width: 100%;
+}
+
+main section .containermenu .breakfast ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+main section .containermenu .breakfast ul a {
+    text-decoration: none;
+    color: white;
+
+    background-color: var(--colorsecundario);
+}
+
+main section .containermenu .breakfast ul a:hover {
+    background-color: var(--colorprincipal);
+
+}
+
+main section .containermenu .breakfast ul a:first-child {
+    background-color: var(--colorprincipal);
+
+}
+
+main section .containermenu .offers {
+    margin-top: var(--margingrid);
+    font-size: 1em;
+    color: white;
+    text-align: left;
+}
+
+main section .containermenu .breakfast hr {
+    width: 13%;
+    border-color: var(--colorprincipal);
+    margin-left: 0%;
+}
+
+main section .containermenu .offers p {
+    font-size: 0.8em;
 
 }
 
@@ -523,6 +620,46 @@ main section .containermenu .titulo h2 {
     main section .container .gridblog article {
         width: 33.333%;
         justify-content: space-between;
+
+    }
+
+
+
+    main section .containermenu .gridmenu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    main section .containermenu .gridmenu .breakfast {
+        width: 25%;
+        padding-top: 2em;
+
+    }
+
+    main section .containermenu .gridmenu .articulos {
+        width: 50%;
+        height: auto;
+        justify-content: left;
+
+    }
+
+    main section .containermenu .gridmenu .articulos article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gridmenu .articulos figure {
+        width: 45%;
+    }
+
+    .gridmenu .articulos .ingredientes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
 
     }
 }
